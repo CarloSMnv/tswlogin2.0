@@ -80,8 +80,8 @@
                                     <label for="floatingPassword">Contraseña</label>
                                     <?php echo $error; ?>
                                   </div>
-                                  <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit" name="submit">Iniciar Sesión</button>
                                   <div class="g-recaptcha" data-sitekey="6LfZ_9IlAAAAAC4QIgUNs_jhUuFGBZQqyYOrilMZ"></div>
+                                  <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit" name="submit">Iniciar Sesión</button>
                                   <small class="text-body-secondary">Al hacer clic, acepta los terminos de servicio.</small>
                                   <hr class="my-4">
                                   <h2 class="fs-5 fw-bold mb-3">Aún no tienes cuenta</h2>

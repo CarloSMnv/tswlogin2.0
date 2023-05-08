@@ -15,7 +15,7 @@
     if (empty($error)) {
         // Verificar el reCAPTCHA
         $captcha_response = $_POST['g-recaptcha-response'];
-        $secret_key = '6LfZ_9IlAAAAAHn5zA_n1SA4nWnIaVVYWAvbo56z'; // Reemplazar con su clave secreta de reCAPTCHA
+        $secret_key = '6LfPnNIlAAAAAJ4_RnSjtI5HNq4BPHpHuMYMZ5-U'; // Reemplazar con su clave secreta de reCAPTCHA
         $verify_response = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret=' . $secret_key . '&response=' . $captcha_response);
         $response_data = json_decode($verify_response);
         if ($response_data->success) {
@@ -80,7 +80,7 @@
                                     <label for="floatingPassword">Contraseña</label>
                                     <?php echo $error; ?>
                                   </div>
-                                  <div class="form-floating mb-3"> <center><div class="g-recaptcha" data-sitekey="6LfZ_9IlAAAAAC4QIgUNs_jhUuFGBZQqyYOrilMZ"></div></center></div>
+                                  <div class="form-floating mb-3"> <center><div class="g-recaptcha" data-sitekey="6LfPnNIlAAAAAAxaoyaNBH4zazFt74UQp9kce7Zx"></div></center></div>
                                   <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit" name="submit">Iniciar Sesión</button>
                                   <small class="text-body-secondary">Al hacer clic, acepta los terminos de servicio.</small>
                                   <hr class="my-4">
